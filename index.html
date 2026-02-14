@@ -1,11 +1,82 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Portfolio by Raihan Ali</title>
+		<title>Raihan Ali | DevOps Engineer</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="DevOps Engineer specializing in Cloud Infrastructure, CI/CD, and Automation. Experienced with AWS, Kubernetes, Terraform, and Python.">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Modern DevOps Portfolio Enhancements */
+			.skill-tag {
+				display: inline-block;
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+				color: white;
+				padding: 8px 16px;
+				border-radius: 20px;
+				margin: 5px;
+				font-size: 0.9em;
+				font-weight: 600;
+			}
+			.skill-tag.aws { background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%); }
+			.skill-tag.terraform { background: linear-gradient(135deg, #5c4ee5 0%, #7b68ee 100%); }
+			.skill-tag.docker { background: linear-gradient(135deg, #2496ed 0%, #0db7ed 100%); }
+			.skill-tag.kubernetes { background: linear-gradient(135deg, #326ce5 0%, #7b68ee 100%); }
+			.skill-tag.python { background: linear-gradient(135deg, #3776ab 0%, #ffd43b 100%); }
+			.skill-tag.go { background: linear-gradient(135deg, #00add8 0%, #29beb0 100%); }
+			
+			.devops-highlight {
+				background: rgba(102, 126, 234, 0.1);
+				border-left: 4px solid #667eea;
+				padding: 20px;
+				margin: 20px 0;
+			}
+			
+			.project-card {
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
+			.project-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+			}
+			
+			.status-badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				background: rgba(34, 197, 94, 0.2);
+				color: #22c55e;
+				padding: 6px 12px;
+				border-radius: 20px;
+				font-size: 0.85em;
+				font-weight: 600;
+			}
+			.status-badge::before {
+				content: "●";
+				color: #22c55e;
+			}
+			
+			.cta-button {
+				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+				border: none !important;
+				transition: all 0.3s ease !important;
+			}
+			.cta-button:hover {
+				transform: scale(1.05);
+				box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+			}
+			
+			.section-title {
+				text-align: center;
+				margin-bottom: 3em;
+			}
+			.section-title h2 {
+				display: inline-block;
+				border-bottom: 3px solid #667eea;
+				padding-bottom: 10px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -14,8 +85,11 @@
 
 				<!-- Intro -->
 					<div id="intro">
-						<h1>Raihan's Portfolio</h1>
-						<p>Showing off my projects and growth</p>
+						<h1>Raihan Ali</h1>
+						<p>DevOps Engineer | Cloud Infrastructure | CI/CD Automation</p>
+						<p style="font-size: 0.9em; margin-top: 1em;">
+							<span class="status-badge">Open to Opportunities</span>
+						</p>
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 						</ul>
@@ -23,87 +97,178 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="index.html" class="logo">Raihan's Portfolio</a>
+						<a href="index.html" class="logo">Raihan Ali</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">Raihan's Portfolio</a></li>
+							<li class="active"><a href="index.html">Portfolio</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
-							<ul class="icons">
+						<ul class="icons">
 							<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/Raihan11x" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 							<li><a href="https://medium.com/@Raihan11x" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-
 						</ul>
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
+						<!-- About Section -->
 							<article class="post featured">
 								<header class="major">
-									<h2><a href="#">My name is Raihan Ali</a></h2>
-									<p>I am a Platform Engineer who loves to code and develop in his free time</p>
-									<h3>Multi tier web application</h3>
+									<h2>Building Reliable Infrastructure at Scale</h2>
+									<p>I'm a DevOps Engineer passionate about automating deployments, optimizing cloud infrastructure, and implementing robust CI/CD pipelines. I bridge the gap between development and operations to deliver software faster and more reliably.</p>
 								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="A picture of my project" /></a>
-									<p>Created a multi-tier web application which demonstrates CRUD functionality. Utilised containers to host and deploy the application. Created a CI/CD pipeline which automatically tests, builds and deploys the application.</p>
+								
+								<div class="devops-highlight">
+									<h3>🚀 What I Do</h3>
+									<ul>
+										<li>Design and implement cloud infrastructure on AWS & Azure</li>
+										<li>Build CI/CD pipelines that deploy code in minutes, not hours</li>
+										<li>Containerize applications with Docker and orchestrate with Kubernetes</li>
+										<li>Automate infrastructure with Terraform and configuration management</li>
+										<li>Monitor, log, and alert to keep systems healthy and secure</li>
+									</ul>
+								</div>
+							</article>
+
+						<!-- Skills Section -->
+							<section id="skills" class="section-title">
+								<h2>Technical Skills</h2>
+								<p>Technologies I work with daily</p>
+								
+								<div style="text-align: center; margin-top: 2em;">
+									<h3>Cloud & Infrastructure</h3>
+									<span class="skill-tag aws">AWS</span>
+									<span class="skill-tag">Azure</span>
+									<span class="skill-tag terraform">Terraform</span>
+									<span class="skill-tag">CloudFormation</span>
+									
+									<h3 style="margin-top: 1.5em;">Containers & Orchestration</h3>
+									<span class="skill-tag docker">Docker</span>
+									<span class="skill-tag kubernetes">Kubernetes</span>
+									<span class="skill-tag">Helm</span>
+									
+									<h3 style="margin-top: 1.5em;">CI/CD & Automation</h3>
+									<span class="skill-tag">GitHub Actions</span>
+									<span class="skill-tag">Azure DevOps</span>
+									<span class="skill-tag">Jenkins</span>
+									
+									<h3 style="margin-top: 1.5em;">Languages</h3>
+									<span class="skill-tag python">Python</span>
+									<span class="skill-tag go">Go</span>
+									<span class="skill-tag">Bash</span>
+									
+									<h3 style="margin-top: 1.5em;">Monitoring & Tools</h3>
+									<span class="skill-tag">Prometheus</span>
+									<span class="skill-tag">Grafana</span>
+									<span class="skill-tag">Git</span>
+									<span class="skill-tag">Linux</span>
+								</div>
+							</section>
+
+						<!-- Featured DevOps Projects -->
+							<section id="projects" class="section-title">
+								<h2>Featured DevOps Projects</h2>
+								<p>Real-world infrastructure and automation work</p>
+							</section>
+
+							<section class="posts">
+								
+								<!-- Project 1: Multi-Tier Web App -->
+								<article class="project-card">
+									<header>
+										<span class="skill-tag" style="font-size: 0.75em;">Python · Docker · CI/CD</span>
+										<h2><a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank">Multi-Tier Web Application</a></h2>
+									</header>
+									<a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank" class="image fit">
+										<img src="images/pic01.jpg" alt="Multi-tier web application architecture" />
+									</a>
+									<p>Production-ready multi-tier web app with full CRUD functionality. Features containerized deployment, automated CI/CD pipeline with testing, building, and deployment stages. Demonstrates microservices architecture best practices.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank" class="button cta-button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- Project 2: Kubernetes Minikube -->
+								<article class="project-card">
+									<header>
+										<span class="skill-tag kubernetes" style="font-size: 0.75em;">Kubernetes · Helm · Docker</span>
+										<h2><a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank">Kubernetes Cluster Management</a></h2>
+									</header>
+									<a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank" class="image fit">
+										<img src="images/pic02.jpg" alt="Kubernetes cluster architecture" />
+									</a>
+									<p>Complete Kubernetes setup on Minikube with deployment manifests, Helm charts, and service configurations. Includes ingress controllers, ConfigMaps, Secrets management, and auto-scaling policies. Perfect for learning K8s fundamentals.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- Project 3: DevOps Learning -->
+								<article class="project-card">
+									<header>
+										<span class="skill-tag terraform" style="font-size: 0.75em;">Terraform · AWS · Azure</span>
+										<h2><a href="https://github.com/Raihan11x/LearningDevOps" target="_blank">DevOps Learning Journey</a></h2>
+									</header>
+									<a href="https://github.com/Raihan11x/LearningDevOps" target="_blank" class="image fit">
+										<img src="images/pic03.jpg" alt="DevOps learning resources" />
+									</a>
+									<p>Comprehensive collection of Infrastructure as Code projects. Includes Terraform modules for AWS and Azure, CloudFormation templates, and best practices for version-controlled infrastructure. Documented learning path for cloud technologies.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Raihan11x/LearningDevOps" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+								<!-- Project 4: dotnetapi-infrastructure -->
+								<article class="project-card">
+									<header>
+										<span class="skill-tag" style="font-size: 0.75em;">.NET · CI/CD · Cloud</span>
+										<h2><a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank">.NET API Infrastructure</a></h2>
+									</header>
+									<a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank" class="image fit">
+										<img src="images/pic04.jpg" alt=".NET API infrastructure" />
+									</a>
+									<p>Complete infrastructure setup for .NET API applications. Includes containerization, deployment pipelines, database migrations, and monitoring setup. Demonstrates backend infrastructure best practices for enterprise applications.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+
+							</section>
+
+						<!-- CTA Section -->
+							<article class="post featured" style="text-align: center;">
+								<header class="major">
+									<h2>Let's Build Something Together</h2>
+									<p>I'm always interested in hearing about new projects and opportunities. Whether you need infrastructure automation, CI/CD optimization, or cloud migration — let's talk.</p>
+								</header>
 								<ul class="actions special">
-									<li><a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App.git" target="_blank" class="button large">View Web Application!</a></li>
+									<li><a href="mailto:Raihanali11@hotmail.com" class="button large cta-button">Get In Touch</a></li>
+									<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="button large">LinkedIn</a></li>
 								</ul>
 							</article>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="#">To Do List</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="a picture of my to do list" /></a>
-									<p><center>A C# project of my activities in which i track my progress.</center><br/></p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/to-do-list.git" target="_blank" class="button">View To Do List</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Sudoku Solver</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="a picture of my project" /></a>
-									<p><center>A Python project which solves any sudoku problems! *whispers* it's not cheating if nobody knows</center></p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/sudoku_solver.git" target="_blank" class="button">View Sudoku Solver</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="#">Team Randomiser</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="an image of a team generator" /></a>
-									<p><center>Team randomiser created to select players to put into two teams for football, this is used weekly to sort out the teams for my football matches.</center></p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/Team_Randomiser.git" target="_blank" class="button">View Team Selector</a></li>
-									</ul>
-								</article>
-							</section>
-
-					</div>
+						</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer" id="contact">
 						<section class="split contact">
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">Raihanali11@hotmail.com</a></p>
+								<p><a href="mailto:Raihanali11@hotmail.com">Raihanali11@hotmail.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
 								<ul class="icons alt">
 									<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 									<li><a href="https://github.com/Raihan11x" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://medium.com/@Raihan11x" target="_blank" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
 								</ul>
 							</section>
 						</section>
@@ -111,7 +276,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>Designed by: Raihan Ali</a></li></ul>
+						<ul><li>© 2026 Raihan Ali</li><li>DevOps Engineer</li></ul>
 					</div>
 
 			</div>
@@ -124,6 +289,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				// Smooth scroll for navigation
+				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+					anchor.addEventListener('click', function (e) {
+						e.preventDefault();
+						const target = document.querySelector(this.getAttribute('href'));
+						if (target) {
+							target.scrollIntoView({
+								behavior: 'smooth'
+							});
+						}
+					});
+				});
+			</script>
 
 	</body>
 </html>
