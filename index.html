@@ -1,309 +1,827 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Raihan Ali | DevOps Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="DevOps Engineer specializing in Cloud Infrastructure, CI/CD, and Automation. Experienced with AWS, Kubernetes, Terraform, and Python.">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* Modern DevOps Portfolio Enhancements */
-			.skill-tag {
-				display: inline-block;
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-				color: white;
-				padding: 8px 16px;
-				border-radius: 20px;
-				margin: 5px;
-				font-size: 0.9em;
-				font-weight: 600;
-			}
-			.skill-tag.aws { background: linear-gradient(135deg, #ff9900 0%, #ff6600 100%); }
-			.skill-tag.terraform { background: linear-gradient(135deg, #5c4ee5 0%, #7b68ee 100%); }
-			.skill-tag.docker { background: linear-gradient(135deg, #2496ed 0%, #0db7ed 100%); }
-			.skill-tag.kubernetes { background: linear-gradient(135deg, #326ce5 0%, #7b68ee 100%); }
-			.skill-tag.python { background: linear-gradient(135deg, #3776ab 0%, #ffd43b 100%); }
-			.skill-tag.go { background: linear-gradient(135deg, #00add8 0%, #29beb0 100%); }
-			
-			.devops-highlight {
-				background: rgba(102, 126, 234, 0.1);
-				border-left: 4px solid #667eea;
-				padding: 20px;
-				margin: 20px 0;
-			}
-			
-			.project-card {
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
-			}
-			.project-card:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-			}
-			
-			.status-badge {
-				display: inline-flex;
-				align-items: center;
-				gap: 8px;
-				background: rgba(34, 197, 94, 0.2);
-				color: #22c55e;
-				padding: 6px 12px;
-				border-radius: 20px;
-				font-size: 0.85em;
-				font-weight: 600;
-			}
-			.status-badge::before {
-				content: "●";
-				color: #22c55e;
-			}
-			
-			.cta-button {
-				background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
-				border: none !important;
-				transition: all 0.3s ease !important;
-			}
-			.cta-button:hover {
-				transform: scale(1.05);
-				box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
-			}
-			
-			.section-title {
-				text-align: center;
-				margin-bottom: 3em;
-			}
-			.section-title h2 {
-				display: inline-block;
-				border-bottom: 3px solid #667eea;
-				padding-bottom: 10px;
-			}
-		</style>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raihan Ali | DevOps Engineer</title>
+    <meta name="description" content="DevOps Engineer specialising in cloud infrastructure, CI/CD automation, and Kubernetes. Based in the UK.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #8b5cf6;
+            --accent: #06b6d4;
+            --dark: #0f172a;
+            --darker: #020617;
+            --light: #f8fafc;
+            --grey: #64748b;
+            --success: #10b981;
+            --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+            --gradient-2: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Raihan Ali</h1>
-						<p>DevOps Engineer | Cloud Infrastructure | CI/CD Automation</p>
-						<p style="font-size: 0.9em; margin-top: 1em;">
-							<span class="status-badge">Open to Opportunities</span>
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+        html {
+            scroll-behavior: smooth;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Raihan Ali</a>
-					</header>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--darker);
+            color: var(--light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Portfolio</a></li>
-							<li><a href="#skills">Skills</a></li>
-							<li><a href="#projects">Projects</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/Raihan11x" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://medium.com/@Raihan11x" target="_blank" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
-						</ul>
-					</nav>
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-				<!-- Main -->
-					<div id="main">
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-						<!-- About Section -->
-							<article class="post featured">
-								<header class="major">
-									<h2>Building Reliable Infrastructure at Scale</h2>
-									<p>I'm a DevOps Engineer passionate about automating deployments, optimizing cloud infrastructure, and implementing robust CI/CD pipelines. I bridge the gap between development and operations to deliver software faster and more reliably.</p>
-								</header>
-								
-								<div class="devops-highlight">
-									<h3>🚀 What I Do</h3>
-									<ul>
-										<li>Design and implement cloud infrastructure on AWS & Azure</li>
-										<li>Build CI/CD pipelines that deploy code in minutes, not hours</li>
-										<li>Containerize applications with Docker and orchestrate with Kubernetes</li>
-										<li>Automate infrastructure with Terraform and configuration management</li>
-										<li>Monitor, log, and alert to keep systems healthy and secure</li>
-									</ul>
-								</div>
-							</article>
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+        }
 
-						<!-- Skills Section -->
-							<section id="skills" class="section-title">
-								<h2>Technical Skills</h2>
-								<p>Technologies I work with daily</p>
-								
-								<div style="text-align: center; margin-top: 2em;">
-									<h3>Cloud & Infrastructure</h3>
-									<span class="skill-tag aws">AWS</span>
-									<span class="skill-tag">Azure</span>
-									<span class="skill-tag terraform">Terraform</span>
-									<span class="skill-tag">CloudFormation</span>
-									
-									<h3 style="margin-top: 1.5em;">Containers & Orchestration</h3>
-									<span class="skill-tag docker">Docker</span>
-									<span class="skill-tag kubernetes">Kubernetes</span>
-									<span class="skill-tag">Helm</span>
-									
-									<h3 style="margin-top: 1.5em;">CI/CD & Automation</h3>
-									<span class="skill-tag">GitHub Actions</span>
-									<span class="skill-tag">Azure DevOps</span>
-									<span class="skill-tag">Jenkins</span>
-									
-									<h3 style="margin-top: 1.5em;">Languages</h3>
-									<span class="skill-tag python">Python</span>
-									<span class="skill-tag go">Go</span>
-									<span class="skill-tag">Bash</span>
-									
-									<h3 style="margin-top: 1.5em;">Monitoring & Tools</h3>
-									<span class="skill-tag">Prometheus</span>
-									<span class="skill-tag">Grafana</span>
-									<span class="skill-tag">Git</span>
-									<span class="skill-tag">Linux</span>
-								</div>
-							</section>
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            position: relative;
+        }
 
-						<!-- Featured DevOps Projects -->
-							<section id="projects" class="section-title">
-								<h2>Featured DevOps Projects</h2>
-								<p>Real-world infrastructure and automation work</p>
-							</section>
+        .nav-links a:hover {
+            color: var(--accent);
+        }
 
-							<section class="posts">
-								
-								<!-- Project 1: Multi-Tier Web App -->
-								<article class="project-card">
-									<header>
-										<span class="skill-tag" style="font-size: 0.75em;">Python · Docker · CI/CD</span>
-										<h2><a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank">Multi-Tier Web Application</a></h2>
-									</header>
-									<a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank" class="image fit">
-										<img src="images/pic01.jpg" alt="Multi-tier web application architecture" />
-									</a>
-									<p>Production-ready multi-tier web app with full CRUD functionality. Features containerized deployment, automated CI/CD pipeline with testing, building, and deployment stages. Demonstrates microservices architecture best practices.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank" class="button cta-button">View Project</a></li>
-									</ul>
-								</article>
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-1);
+            transition: width 0.3s;
+        }
 
-								<!-- Project 2: Kubernetes Minikube -->
-								<article class="project-card">
-									<header>
-										<span class="skill-tag kubernetes" style="font-size: 0.75em;">Kubernetes · Helm · Docker</span>
-										<h2><a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank">Kubernetes Cluster Management</a></h2>
-									</header>
-									<a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank" class="image fit">
-										<img src="images/pic02.jpg" alt="Kubernetes cluster architecture" />
-									</a>
-									<p>Complete Kubernetes setup on Minikube with deployment manifests, Helm charts, and service configurations. Includes ingress controllers, ConfigMaps, Secrets management, and auto-scaling policies. Perfect for learning K8s fundamentals.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+        .nav-links a:hover::after {
+            width: 100%;
+        }
 
-								<!-- Project 3: DevOps Learning -->
-								<article class="project-card">
-									<header>
-										<span class="skill-tag terraform" style="font-size: 0.75em;">Terraform · AWS · Azure</span>
-										<h2><a href="https://github.com/Raihan11x/LearningDevOps" target="_blank">DevOps Learning Journey</a></h2>
-									</header>
-									<a href="https://github.com/Raihan11x/LearningDevOps" target="_blank" class="image fit">
-										<img src="images/pic03.jpg" alt="DevOps learning resources" />
-									</a>
-									<p>Comprehensive collection of Infrastructure as Code projects. Includes Terraform modules for AWS and Azure, CloudFormation templates, and best practices for version-controlled infrastructure. Documented learning path for cloud technologies.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/LearningDevOps" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            position: relative;
+            overflow: hidden;
+        }
 
-								<!-- Project 4: dotnetapi-infrastructure -->
-								<article class="project-card">
-									<header>
-										<span class="skill-tag" style="font-size: 0.75em;">.NET · CI/CD · Cloud</span>
-										<h2><a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank">.NET API Infrastructure</a></h2>
-									</header>
-									<a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank" class="image fit">
-										<img src="images/pic04.jpg" alt=".NET API infrastructure" />
-									</a>
-									<p>Complete infrastructure setup for .NET API applications. Includes containerization, deployment pipelines, database migrations, and monitoring setup. Demonstrates backend infrastructure best practices for enterprise applications.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank" class="button">View Project</a></li>
-									</ul>
-								</article>
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: var(--gradient-1);
+            opacity: 0.15;
+            border-radius: 50%;
+            filter: blur(100px);
+        }
 
-							</section>
+        .hero-content {
+            max-width: 700px;
+            z-index: 1;
+        }
 
-						<!-- CTA Section -->
-							<article class="post featured" style="text-align: center;">
-								<header class="major">
-									<h2>Let's Build Something Together</h2>
-									<p>I'm always interested in hearing about new projects and opportunities. Whether you need infrastructure automation, CI/CD optimization, or cloud migration — let's talk.</p>
-								</header>
-								<ul class="actions special">
-									<li><a href="mailto:Raihanali11@hotmail.com" class="button large cta-button">Get In Touch</a></li>
-									<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="button large">LinkedIn</a></li>
-								</ul>
-							</article>
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
 
-						</div>
+        .hero-badge::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
 
-				<!-- Footer -->
-					<footer id="footer" id="contact">
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:Raihanali11@hotmail.com">Raihanali11@hotmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/Raihan11x" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://medium.com/@Raihan11x" target="_blank" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>© 2026 Raihan Ali</li><li>DevOps Engineer</li></ul>
-					</div>
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
 
-			</div>
+        .hero h1 span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: var(--grey);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
 
-			<script>
-				// Smooth scroll for navigation
-				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-					anchor.addEventListener('click', function (e) {
-						e.preventDefault();
-						const target = document.querySelector(this.getAttribute('href'));
-						if (target) {
-							target.scrollIntoView({
-								behavior: 'smooth'
-							});
-						}
-					});
-				});
-			</script>
+        .hero-desc {
+            font-size: 1.125rem;
+            color: var(--grey);
+            margin-bottom: 2.5rem;
+            max-width: 600px;
+        }
 
-	</body>
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--light);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 8rem 5%;
+        }
+
+        .section-header {
+            text-align: centre;
+            margin-bottom: 4rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            color: var(--grey);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: centre;
+        }
+
+        .about-content h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .about-content p {
+            color: var(--grey);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            color: var(--grey);
+            font-size: 0.9rem;
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .skill-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-1);
+            border-radius: 16px;
+            display: flex;
+            align-items: centre;
+            justify-content: centre;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--primary);
+            padding: 0.4rem 0.8rem;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: all 0.4s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 30px 60px rgba(99, 102, 241, 0.2);
+        }
+
+        .project-image {
+            height: 220px;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: centre;
+            justify-content: centre;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .project-tech {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .project-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .project-content p {
+            color: var(--grey);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: centre;
+            gap: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .project-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: centre;
+            position: relative;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -20%;
+            width: 600px;
+            height: 600px;
+            background: var(--gradient-2);
+            opacity: 0.1;
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+
+        .contact h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact p {
+            color: var(--grey);
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: centre;
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            display: flex;
+            align-items: centre;
+            justify-content: centre;
+            color: var(--light);
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background: var(--gradient-1);
+            border-color: transparent;
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: centre;
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--grey);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-stats {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 5rem 5%;
+            }
+
+            .section-header h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Raihan Ali</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Available for Opportunities</div>
+            <h1>DevOps Engineer <span>&amp; Cloud Specialist</span></h1>
+            <p class="hero-subtitle">Building reliable infrastructure at scale</p>
+            <p class="hero-desc">I'm a UK-based DevOps Engineer passionate about automating deployments, optimising cloud infrastructure, and implementing robust CI/CD pipelines. I bridge the gap between development and operations to deliver software faster and more reliably.</p>
+            
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="section-header" style="text-align: left;">
+                    <h2>About <span>Me</span></h2>
+                </div>
+                <p>With a passion for infrastructure automation and cloud technologies, I specialise in designing scalable, secure systems that help businesses move faster. My expertise spans the entire DevOps lifecycle—from code commit to production deployment.</p>
+                
+                <p>I believe in infrastructure as code, continuous integration, and observable systems. Every project I undertake focuses on reliability, scalability, and maintainability.</p>
+                
+                <p>When I'm not optimising pipelines or containerising applications, you'll find me on the football pitch or exploring new technologies to add to my toolkit.</p>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99.9%</div>
+                    <div class="stat-label">Uptime Achieved</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Deployment Time Reduction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-header">
+            <h2>Technical <span>Skills</span></h2>
+            <p>Technologies I work with to build, deploy, and scale applications</p>
+        </div>
+        
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <h3>Cloud Platforms</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Amazon Web Services</span>
+                    <span class="skill-tag">Microsoft Azure</span>
+                    <span class="skill-tag">Cloud Architecture</span>
+                    <span class="skill-tag">Cost Optimisation</span>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-dharmachakra"></i></div>
+                <h3>Containers &amp; Orchestration</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Helm</span>
+                    <span class="skill-tag">Container Security</span>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code-branch"></i></div>
+                <h3>Infrastructure as Code</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">CloudFormation</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Pulumi</span>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                <h3>CI/CD &amp; Automation</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Azure DevOps</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">ArgoCD</span>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                <h3>Programming</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">PowerShell</span>
+                </div>
+            </div>
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Monitoring &amp; Observability</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">ELK Stack</span>
+                    <span class="skill-tag">Datadog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-header">
+            <h2>Featured <span>Projects</span></h2>
+            <p>Real-world infrastructure and automation solutions</p>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-image">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tech">Python</span>
+                        <span class="project-tech">Docker</span>
+                        <span class="project-tech">CI/CD</span>
+                    </div>
+                    
+                    <h3>Multi-Tier Web Application</h3>
+                    
+                    <p>Production-ready multi-tier web application demonstrating full CRUD functionality with microservices architecture. Features automated CI/CD pipeline with testing, building, and deployment stages. Containerised with Docker for consistent environments.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Raihan11x/Python-Multi-Tier-Web-App" target="_blank">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #326ce5 0%, #7b68ee 100%);">
+                    <i class="fas fa-dharmachakra"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tech">Kubernetes</span>
+                        <span class="project-tech">Helm</span>
+                        <span class="project-tech">Docker</span>
+                    </div>
+                    
+                    <h3>Kubernetes Cluster Management</h3>
+                    
+                    <p>Complete Kubernetes setup on Minikube with production-grade deployment manifests, Helm charts for package management, and service configurations. Includes ingress controllers, ConfigMaps, Secrets management, and auto-scaling policies.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Raihan11x/Kubernetes-Minikube" target="_blank">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #5c4ee5 0%, #7b68ee 100%);">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tech">Terraform</span>
+                        <span class="project-tech">AWS</span>
+                        <span class="project-tech">Azure</span>
+                    </div>
+                    
+                    <h3>DevOps Learning Journey</h3>
+                    
+                    <p>Comprehensive collection of Infrastructure as Code projects and learning resources. Includes reusable Terraform modules for AWS and Azure, CloudFormation templates, and documented best practices for version-controlled infrastructure.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Raihan11x/LearningDevOps" target="_blank">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-image" style="background: linear-gradient(135deg, #512bd4 0%, #7b68ee 100%);">
+                    <i class="fas fa-cubes"></i>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tech">.NET</span>
+                        <span class="project-tech">CI/CD</span>
+                        <span class="project-tech">Cloud</span>
+                    </div>
+                    
+                    <h3>.NET API Infrastructure</h3>
+                    
+                    <p>Complete infrastructure setup for .NET API applications, demonstrating enterprise backend infrastructure patterns. Includes containerisation strategies, deployment pipelines, database migration handling, and comprehensive monitoring setup.</p>
+                    
+                    <div class="project-links">
+                        <a href="https://github.com/Raihan11x/dotnetapi-infrastructure" target="_blank">
+                            <i class="fab fa-github"></i> View Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Let's Work Together</h2>
+        
+        <p>I'm always interested in hearing about new projects and opportunities. Whether you need infrastructure automation, CI/CD optimisation, or cloud migration—let's discuss how I can help.</p>
+        
+        <a href="mailto:Raihanali11@hotmail.com" class="btn btn-primary" style="font-size: 1.1rem; padding: 1.25rem 2.5rem;">
+            <i class="fas fa-envelope"></i> Get in Touch
+        </a>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/raihan-ali-843296157/" target="_blank" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Raihan11x" target="_blank" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com/@Raihan11x" target="_blank" title="Medium">
+                <i class="fab fa-medium"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Raihan Ali. DevOps Engineer based in the United Kingdom.</p>
+    </footer>
+
+</body>
 </html>
